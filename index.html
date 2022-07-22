@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Expense Traker App</title>
+</head>
+<body>
+   <div class="container" id ="box">
+       <div class="budget_numbers">
+           <div class="numbers" id="earned">
+             <small>Money Earned</small>
+              <div class="amount_container">
+               <p id="earned_symbol">$</p>
+               <span id="amount_earned"></span>
+             </div>
+        </div>
+        <div class="numbers" id="available">
+            <small>Money Available</small>
+             <div class="amount_container">
+              <p>$</p>
+              <span id="amount_available"></span>
+            </div>
+      </div>
+      <div class="numbers" id="spent">
+        <small>Money Spent</small>
+         <div class="amount_container">
+          <p id="spent_symbol">$</p>
+          <span id="amount_spent"></span>
+        </div>
+      </div>
+     </div>
+     <div class="input_area">
+         <input type="text" id="description" placeholder="Description">
+         <input type="number" id="amount" placeholder="Amount">
+     </div>
+     <div class="buttons_area">
+         <button id="add_income">Add Income</button>
+         <button id="add_expense">Add Expense</button>
+     </div>
+
+     <div class="items_container">
+         <div id="income_container" class="container">
+             <h2>Income</h2>
+             <!--<div class="item income">
+                 <h4>stuff sold</h4>
+                 <div class="item_income">
+                     <p class="symbol">$</p>
+                     <span class="income_amount">200</span>
+                 </div>
+                 <i class="far fa-trash-alt"></i>
+             </div>-->
+         </div>
+
+         <div id="expenses_container" class="container">
+             <h2>Expenses</h2>
+
+             <!--<div class="item expense">
+                 <h4>stuff bought</h4>
+                 <div class="item_expense">
+                     <p class="symbol">$</p>
+                     <span class="expense_amount">200</span>
+                 </div>
+                 <i class="far fa-trash-alt"></i>
+             </div>-->
+         </div>
+     </div>
+   </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
